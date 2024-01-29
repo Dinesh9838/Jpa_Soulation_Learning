@@ -9,18 +9,18 @@ public class Runner {
 	static StudentRepo stuRepo = new StudentRepo();
 	public static void main(String[] args) {
 		
-		save();
+//		save();
 //		stuRepo.findAndUpdate(1);
 //		stuRepo.findAndDelete(3);
 //		System.out.println("Operation completed");
 //		
-		List<Student> findAll = stuRepo.findAll();
+//		List<Student> findAll = stuRepo.findAll();
 //		findAll.forEach(System.out::println);
 //		
-		for (Student student : findAll) {
-			System.out.println(student);
-		}
-//		stuRepo.findAndUpdate(1);
+//		for (Student student : findAll) {
+//			System.out.println(student);
+//		}
+		stuRepo.findAndUpdate(1);
 //		stuRepo.findAndDelete(1);
 		System.out.println("..........");
 	}
