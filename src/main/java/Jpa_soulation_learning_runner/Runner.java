@@ -20,8 +20,8 @@ public class Runner {
 //		for (Student student : findAll) {
 //			System.out.println(student);
 //		}
-		stuRepo.findAndUpdate(1);
-//		stuRepo.findAndDelete(1);
+//		stuRepo.findAndUpdate(1);
+		stuRepo.findAndDelete(1);
 		System.out.println("..........");
 	}
 
