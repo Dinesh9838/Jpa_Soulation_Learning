@@ -9,26 +9,17 @@ public class Runner {
 	static StudentRepo stuRepo = new StudentRepo();
 	public static void main(String[] args) {
 		
-		save();
-//		stuRepo.findAndUpdate(1);
-//		stuRepo.findAndDelete(3);
-//		System.out.println("Operation completed");
-//		
-		List<Student> findAll = stuRepo.findAll();
-//		findAll.forEach(System.out::println);
-//		
-		for (Student student : findAll) {
-			System.out.println(student);
-		}
-//		stuRepo.findAndUpdate(1);
-//		stuRepo.findAndDelete(1);
-		System.out.println("..........");
+//		save();
+		List<Student> findAll = stuRepo.findByCriteria();
+		findAll.forEach(System.out::println);
+		System.out.println("Operation completed");
+		
 	}
 
 	private static void save() {
-		Student stu1 = new Student("Raghav",2400,54);
-		Student stu2 = new Student("Aditya",2500,25);
-		Student stu3 = new Student("Aman",2600,20);
+		Student stu1 = new Student("Mukul",2400,24);
+		Student stu2 = new Student("Neet",2500,25);
+		Student stu3 = new Student("Heetesh",2600,26);
 		stuRepo.persist(stu1);
 		System.out.println("Successully save in db" + stu1);
 		stuRepo.persist(stu2);
